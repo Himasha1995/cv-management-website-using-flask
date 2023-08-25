@@ -1,0 +1,384 @@
+<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+
+<link href="../static/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../static/css/style4.css">
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background: #eee;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #222;
+  font-size: 14px;
+  line-height: 26px;
+  padding-bottom: 50px;
+}
+
+.container {
+  max-width: 700px;
+  background: #fff;
+  margin: 0px auto 0px;
+  box-shadow: 1px 1px 2px #DAD7D7;
+  border-radius: 3px;
+  padding: 40px;
+  margin-top: 50px;
+}
+
+.header {
+  margin-bottom: 30px;
+}
+.header .full-name {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.header .first-name {
+  font-weight: 700;
+}
+.header .last-name {
+  font-weight: 300;
+}
+.header .contact-info {
+  margin-bottom: 20px;
+}
+.header .email,
+.header .phone {
+  color: #999;
+  font-weight: 300;
+}
+.header .separator {
+  height: 10px;
+  display: inline-block;
+  border-left: 2px solid #999;
+  margin: 0px 10px;
+}
+.header .position {
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: underline;
+}
+
+.details {
+  line-height: 20px;
+}
+.details .section {
+  margin-bottom: 40px;
+}
+.details .section:last-of-type {
+  margin-bottom: 0px;
+}
+.details .section__title {
+  letter-spacing: 2px;
+  color: #54AFE4;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.details .section__list-item {
+  margin-bottom: 40px;
+}
+.details .section__list-item:last-of-type {
+  margin-bottom: 0;
+}
+.details .left,
+.details .right {
+  vertical-align: top;
+  display: inline-block;
+}
+.details .left {
+  width: 60%;
+}
+.details .right {
+  text-align: right;
+  width: 39%;
+}
+.details .name {
+  font-weight: bold;
+}
+.details a {
+  text-decoration: none;
+  color: #000;
+  font-style: italic;
+}
+.details a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+.details .skills__item {
+  margin-bottom: 10px;
+}
+.details .skills__item .right input {
+  display: none;
+}
+.details .skills__item .right label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #C3DEF3;
+  border-radius: 20px;
+  margin-right: 3px;
+}
+.details .skills__item .right input:checked + label {
+  background: #79A9CE;
+}
+</style>
+<header class="h_color" id="head">
+    <div class="text-left">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="logo">
+                        <h2>RESUME MAKER</h2>
+                          <p>Attractive resumes Download and Use Now!</p> 
+                        </div>
+                        <div class="nav_button_right">
+                        <a  class="btn btn-primary" href="#popup1">Add your Data</a>
+                        <input type="button" onclick="printDiv()" class="btn btn-warning" value="Print Resume">
+                        <a class="btn btn-info" href="resume_template">More Resume Templates</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</header>
+
+<div class="container">
+  <div class="header">
+    <div class="full-name">
+      <span class="first-name">John</span>
+      <span class="last-name">Doe</span>
+    </div>
+    <div class="contact-info">
+      <span class="email">Email: </span>
+      <span class="separator"></span>
+      <span class="phone">Phone: </span>
+    </div>
+
+    <div class="about">
+      <span class="position">Front-End Developer </span>
+      <span class="desc">
+        I am a front-end developer with more than 3 years of experience writing html, css, and js. I'm motivated, result-focused and seeking a successful team-oriented company with opportunity to grow.
+      </span>
+    </div>
+  </div>
+  <div class="details">
+    <div class="section">
+      <div class="section__title">Experience</div>
+      <div class="section__list">
+        <div class="section__list-item">
+          <div class="left">
+            <div class="name">KlowdBox</div>
+            <div class="addr">San Fr, CA</div>
+            <div class="duration">Jan 2011 - Feb 2015</div>
+          </div>
+          <div class="right">
+            <div class="name">Fr developer</div>
+            <div class="desc">did This and that</div>
+          </div>
+        </div>
+        <div class="section__list-item">
+          <div class="left">
+            <div class="name">Akount</div>
+            <div class="addr">San Monica, CA</div>
+            <div class="duration">Jan 2011 - Feb 2015</div>
+          </div>
+          <div class="right">
+            <div class="name">Fr developer</div>
+            <div class="desc">did This and that</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="section">
+      <div class="section__title">Education</div>
+      <div class="section__list">
+        <div class="section__list-item">
+          <div class="left">
+            <div class="name">Sample Institute of technology</div>
+            <div class="addr">San Fr, CA</div>
+            <div class="duration">Jan 2011 - Feb 2015</div>
+          </div>
+          <div class="right">
+            <div class="name">Fr developer</div>
+            <div class="desc">did This and that</div>
+          </div>
+        </div>
+        <div class="section__list-item">
+          <div class="left">
+            <div class="name">Akount</div>
+            <div class="addr">San Monica, CA</div>
+            <div class="duration">Jan 2011 - Feb 2015</div>
+          </div>
+          <div class="right">
+            <div class="name">Fr developer</div>
+            <div class="desc">did This and that</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="section">
+      <div class="section__title">Projects</div>
+      <div class="section__list">
+        <div class="section__list-item">
+          <div class="name">DSP</div>
+          <div class="text">I am a front-end developer with more than 3 years of experience writing html, css, and js. I'm motivated, result-focused and seeking a successful team-oriented company with opportunity to grow.</div>
+        </div>
+
+        <div class="section__list-item">
+          <div class="name">DSP</div>
+          <div class="text">I am a front-end developer with more than 3 years of experience writing html, css, and js. I'm motivated, result-focused and seeking a successful team-oriented company with opportunity to grow. <a href="/login">link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section__title">Skills</div>
+      <div class="skills">
+        <div class="skills__item">
+          <div class="left">
+            <div class="name">
+              Javascript
+            </div>
+          </div>
+          <div class="right">
+            <input id="ck1" type="checkbox" checked />
+
+            <label for="ck1"></label>
+            <input id="ck2" type="checkbox" checked />
+
+            <label for="ck2"></label>
+            <input id="ck3" type="checkbox" />
+
+            <label for="ck3"></label>
+            <input id="ck4" type="checkbox" />
+            <label for="ck4"></label>
+            <input id="ck5" type="checkbox" />
+            <label for="ck5"></label>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="skills__item">
+        <div class="left">
+          <div class="name">
+            CSS</div>
+        </div>
+        <div class="right">
+          <input id="ck1" type="checkbox" checked />
+
+          <label for="ck1"></label>
+          <input id="ck2" type="checkbox" checked />
+
+          <label for="ck2"></label>
+          <input id="ck3" type="checkbox" />
+
+          <label for="ck3"></label>
+          <input id="ck4" type="checkbox" />
+          <label for="ck4"></label>
+          <input id="ck5" type="checkbox" />
+          <label for="ck5"></label>
+
+        </div>
+      </div>
+
+    </div>
+    <div class="section">
+      <div class="section__title">
+        Interests
+      </div>
+      <div class="section__list">
+        <div class="section__list-item">
+          Football, programming.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<form class="needs-validation" novalidate>
+    <div class="form-row form-group">
+        <div class="col-md-4">
+            <label for="name">Full name</label>
+            <input type="text" class="form-control" id="name" placeholder="Full name" required>
+            <div class="invalid-feedback"> Enter your Full name.</div>
+        </div>   
+        <div class="col-md-4">
+            <label for="email">Email Address</label>
+            <input type="text" class="form-control" id="email" placeholder="enter your email"  required>
+            <div class="invalid-feedback"> Enter your email address.</div>
+        </div> 
+        <div class="col-md-4">
+            <label for="phnum">Phone number</label>
+            <input type="text" class="form-control" id="phnum" placeholder="enter your phone number"  required>
+            <div class="invalid-feedback"> Enter your phone number.</div>
+        </div> 
+        <div class="col-md-4">
+            <label for="city">which position</label>
+            <input type="text" class="form-control" id="city" placeholder="enter your city."  required>
+            <div class="invalid-feedback"> Enter your position.</div>
+        </div>  
+        
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h5>EXPERIENCE</h5>
+        </div>
+        <div class="col-md-6">
+            <label for="achivement">Experience</label>
+            <textarea rows="4"  class="form-control" id="achivement" placeholder="enter your achievement.."  ></textarea>
+            <div style="color: red;display: none" id="achivement_err">**enter Experience.</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+                <h5>PROJECTS</h5>
+        </div>
+        <div class="col-md-6">
+            <label for="achivement">Project</label>
+            <textarea rows="4"  class="form-control" id="achivement" placeholder="enter your achievement.."  ></textarea>
+            <div style="color: red;display: none" id="achivement_err">**enter Experience.</div>
+        </div>
+          
+        <div class="col-md-3">
+            <label></label>
+            <input type="button" value="Add achievement" style="width: 100%;margin-top: 8px"  class="btn" onclick="addache()">
+        </div>
+        <div class="col-md-3">
+            <label></label>
+            <input type="button" value="Delete achievement" style="width: 100%;margin-top: 8px"  class="btn" onclick="achivementDeleteFunction()">
+        </div>  
+        <div class="col-md-12" style="padding: 20px;">
+            <table id="acheivement_data" style="width: 100%;margin-top: 12px">
+            </table>
+        </div>  
+    </div>
+
+        <div style="margin-bottom: 20px;">
+            <button class="btn btn-primary" type="submit" >Submit form</button>
+            <a href="#" class="btn btn-danger">Close</a>
+        </div>
+
+</form>
+</div>
+</div>
+</div>
+
+<script src="../static/js/jquery-2.1.3.js"></script>
+<script src="../static/js/my.js"></script>

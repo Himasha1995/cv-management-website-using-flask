@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10%;
+    background-color: #EEEEEE;
+}
+
+h1{
+    margin: 30px 0;
+}
+
+.contact__form{
+    background-color: #FCFCFC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    text-align: left;
+    width: 50vw;
+    padding: 70px 30px;
+    border-radius: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.contact__form > input, .contact__form > textarea{
+    padding: 10px 20px;
+    font-size: 1.2rem;
+
+    border-radius: 1rem;
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.contact__form > textarea{
+    resize: vertical;
+}
+
+.contact__form > input:focus, .contact__form > textarea:focus{
+    outline: none;
+    border: none;
+}
+
+#submit{
+    margin: 15px 0;
+    padding: 15px 45px;
+    align-self: center;
+    border-radius: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-size: 1.25rem;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+
+    transition: transform 0.2s;
+}
+
+#submit:hover{
+    transform: scale(1.05);
+}

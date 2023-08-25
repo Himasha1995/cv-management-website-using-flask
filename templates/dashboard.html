@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>CV Managment</title>
+    <link rel="stylesheet" href="/static/css/style1.css" />
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+        <link href="../static/css/style4.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo_item">
+        <i class="bx bx-menu" id="sidebarOpen"></i>
+        <img src="/static/css/images/logo.png" alt=""></i>My Cv Templates
+      </div>
+      <div class="navbar_content">
+        <i class="bi bi-grid"></i>
+        <i class='bx bx-sun' id="darkLight"></i>
+        <i class='bx bx-bell' ></i>
+        <h5> {{user.name }}</h5>
+      </div>
+    </nav>
+    <nav class="sidebar">
+      <div class="menu_content">
+        <ul class="menu_items">
+          <div class="menu_title menu_dahsboard"></div>
+          <li class="item">
+            <div href="/dashboard" class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="bx bx-home-alt"></i>
+              </span>
+              <span class="navlink">Home</span>
+            </div>
+          </li>
+        <li class="item">
+          <a href="/logout" class="nav_link">
+            <span class="navlink_icon">
+              <i class="bx bx-cog"></i>
+            </span>
+            <span class="navlink">Logout</span>
+          </a>
+        </li>        
+      </div>
+    </nav>
+    <header class="bg_image">
+      <div class="text-left">
+          <div class="container">
+              <div class="logo">
+                  <h2>Cv Creater</h2>
+                  <p>Attractive resumes Download and Use Now!</p> 
+              </div>
+              <div class="nav_button_right">
+                  <a href="/resume_template" class="btn btn-info" >Create Awesome Resumes Now..!</a>
+              </div>
+          </div>
+      </div>
+  </header>
+
+
+  <section id="banner">
+      <div class="container">
+          <div class="row container">
+              <div class="col-md-12">
+                  <h1> IMPRESSIVE RESUMES  </h1>
+                  <h4>EASY ONLINE BUILDER</h4>
+                  <a href="/resume_template" class="btn btn-danger bn" >View All Templates</a>
+              </div>
+          </div>
+      </div>
+  </section>
+  <script src="/static/js/jquery-2.1.3.js"></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Managment</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <script src="../custom-scripts.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav class="nav container">
+          <h2 class="nav_logo"><a href="#">My Cv creator</a></h2>
+          <ul class="menu_items">
+            <img src="/static/css/images/times.svg" alt="timesicon" id="menu_toggle" />
+            <li><a href="#">Home</a></li>
+            <li><a href="/contact">Contact </a></li>
+            <li><a href="/register">Register</a></li>
+            <li><a href="/login">Login</a></li>
+          </ul>
+          <img src="/static/css/images/bars.svg" alt="timesicon" id="menu_toggle" />
+        </nav>
+      </header>
+      <section class="hero">
+        <div class="row container">
+          <div class="column">
+            <h2>WELCOME TO MY CV CREATOR <br />Build A Professional CV in Minutes.</h2>
+            <p>Online Resume / CV Builder and Software</p><br />
+            <p>Create an out of this world resume / CV with expert content that can be customized just for you!</p>
+            <div class="buttons">
+              <a class="btn btn-primary" href="/register" role="button">Get Started</a>
+            </div>
+          </div>
+          <div class="column">
+            <img src="/static/css/images/hero.png" alt="heroImg" class="hero_img" />
+          </div>
+        </div>
+        <img src="/static/css/images/bg-bottom-hero.png" alt="" class="curveImg" />
+      </section>
+    </main>
+    <script>
+      const header = document.querySelector("header");
+      const menuToggler = document.querySelectorAll("#menu_toggle");
+
+      menuToggler.forEach(toggler => {
+        toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
+      });
+    </script>
+  </body>
+</html>
